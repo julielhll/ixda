@@ -18,7 +18,9 @@ When a conference is finished, as people leave the room, they come across a devi
 
 ## How to build the poll
 
-You will need 5 transparent tubes that are placed on a base made out of cardboard (see picture below).
+You will need 5 transparent tubes that are placed on a base made out of cardboard (see picture below). Underneath each tube, a force-sensitive resistor is placed. You can use marbles to display (and vote) in the different tubes. Stones don't work, I recommend something heavier.
+
+To remove the marbles, you have to lift the tubes. They will then pour in the base that you can open to replace the marbles into their original place.
 
 # How to connect p5.js and arduino ?
 
@@ -56,7 +58,7 @@ serialPort.on( 'open', function () {
 } );
 ```
 
-The values you get from your Arduino Board are stored into the variable press, as written below. However, the values are stings so you need to use JSON.parse() in main.js file, which analyses the values and return a number.
+The values you get from your Arduino Board are stored into the variable press, as written below. However, the values are stings so you need to use JSON.parse() in main.js file, which analyses the values. Here, we ask the programm to return a number.
 
 ```javascript
 press = JSON.parse(data).press;
