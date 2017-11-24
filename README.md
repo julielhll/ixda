@@ -1,4 +1,4 @@
-# Nom du projet
+# Baromètre à émotions
 
 When a conference is finished, as people leave the room, they come across a device asking how they feel about what they have seen. Then they can vote for different feelings.
 
